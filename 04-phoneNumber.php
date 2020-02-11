@@ -3,7 +3,7 @@
 declare(strict_types=1);
 
 function phoneNumber(string $str) : bool {
-    return preg_match("/[a-z]/", $str) === 0;
+    return preg_match("/^[1-9-]+$/", $str) === 1;
 }
 
 var_dump(phoneNumber("blah")); // bool(false)
